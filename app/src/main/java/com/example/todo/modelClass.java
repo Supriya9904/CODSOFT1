@@ -1,6 +1,6 @@
 package com.example.todo;
 
-//step 3.Model class
+
 public class modelClass {
      int priority;
     String task;
