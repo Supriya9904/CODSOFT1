@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
             String description = data.getStringExtra("taskDescription");
             int priority = data.getIntExtra("taskPriority", 0);
 
-            //modelClassList.add(new modelClass(title, description, priority));
+            
             if (requestCode == ADD_TASK_REQUEST) {
                 modelClassList.add(new modelClass(title, description, priority));
             } else if (requestCode == EDIT_TASK_REQUEST) {
@@ -94,16 +94,7 @@ public class MainActivity extends AppCompatActivity {
             sortTasksByPriority();
             adapter.notifyDataSetChanged();
         }
-//            modelClass model = new modelClass(title, priority);
-//            if (position != -1) {
-//                modelClassList.set(position, model);
-//                adapter.notifyItemChanged(position);
-//                position = -1;
-//            } else {
-//                modelClassList.add(model);
-//                adapter.notifyItemInserted(modelClassList.size() - 1);
-//            }
-//        }
+
     }
 
     private void sortTasksByPriority() {
