@@ -42,8 +42,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.Viewholder> {
     @Override
     public void onBindViewHolder(@NonNull Viewholder holder,
                                  @SuppressLint("RecyclerView") int position) {
-//        String task=modelClassList.get(position).getTask();
-//        viewholder.setData(task);
+
         modelClass model = modelClassList.get(position);
         holder.task.setText(model.getTask());
         holder.checkBox.setChecked(false);
@@ -99,10 +98,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.Viewholder> {
             iconDelete=itemView.findViewById(R.id.deleteIcon);
         }
 
-//        private void setData(String taskText){
-//            task.setText(taskText);
-//
-//        }
+
     }
 }
 
